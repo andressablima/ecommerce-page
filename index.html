@@ -7,38 +7,90 @@
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
   <title>Frontend Mentor | E-commerce product page</title>
+  <link rel="stylesheet" href="./styles.css">
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
 </head>
 <body>
-
-  Collections
-  Men
-  Women
-  About
-  Contact
-
-  Sneaker Company
-
-  Fall Limited Edition Sneakers
-
-  These low-profile sneakers are your perfect casual wear companion. Featuring a 
-  durable rubber outer sole, they’ll withstand everything the weather can offer.
-
-  $125.00
-  50%
-  $250.00
-
-  0
-  Add to cart
+  <main class="container">
+    <header>
+      <!--Menu Mobile -->
+      <nav class="nav-mobile">
+        <div class="items-container">
+          <div class="hamb-icon">
+            <img id="burguer" onclick="clickMenu()" src="./images/icon-menu.svg">
+          </div>
+          <menu class="itens-mob">
+            <ul>
+              <li><a href="#">Collections</a></li>
+              <li>Men</li>
+              <li>Women</li>
+              <li>About</li>
+              <li>Contact</li>
+            </ul>
+          </menu>
+        </div>
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+        <div class="logo-mob">
+          <img src="./images/logo.svg">
+        </div>
+        <div class="side-nav">
+            <img class="cart-icon" src="./images/icon-cart.svg">
+            <img class="prof-icon" src="./images/image-avatar.png">
+        </div>
+      </nav>
+      <!-- Menu Desktop -->
+      <nav class="menu-desktop">
+        <img src="./images/logo.svg">
+        <div class="menu-itens">
+          <ul>
+            <li>Collections</li>
+            <li>Men</li>
+            <li>Women</li>
+            <li>About</li>
+            <li>Contact</li>
+          </ul>
+        </div>
+        <div class="side-nav">
+          <img class="cart-icon" src="./images/icon-cart.svg">
+          <img class="prof-icon" src="./images/image-avatar.png">
+        </div>
+      </nav>
+      
+  
+    </header>
+    <div class="carrosel-imgs">
+
+
+    </div>
+    <section>
+      <h2>Sneaker Company</h2>
+      <h1>Fall Limited Edition Sneakers</h1>
+      <div class="descriptions">
+        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+        <div class="price">
+          <strong>$125.00</strong>
+        </div>
+        <div class="dscount">
+          <p>50%</p>
+        </div>
+        <div class="price2">
+          <strong>$250.00</strong>
+        </div>
+        <button> 0  (cart) </button>
+        <button> Add to cart </button>
+      </div>
+    </section>
+
+    <footer>
+      <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="https://www.linkedin.com/in/andressablima/">Andressa Lima</a>.
+      </div>
+    </footer>
+  </main>
+
+
+  <scipt src="./scripts/main.js"></scipt>
 </body>
 </html>
