@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | E-commerce product page</title>
-  <link rel="stylesheet" href="./styles.css">
-
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Carrossel</title>
+    <link rel="stylesheet" href="./index.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <main class="container">
+    <main class="container">
     <header>
       <!--Menu Mobile -->
       <nav class="nav-mobile">
@@ -52,45 +50,56 @@
         </div>
         <div class="side-nav">
           <img class="cart-icon" src="./images/icon-cart.svg">
-          <img class="prof-icon" src="./images/image-avatar.png">
+          <img class="img-avatar" src="./images/image-avatar.png">
         </div>
       </nav>
-      
-  
     </header>
-    <div class="carrosel-imgs">
 
-
-    </div>
+    <div class="container-slider">
+        <button id="prev-button"><img src="./images/icon-previous.svg"></button>
+        <div class="container-images">
+            <img src="./images/image-product-1.jpg" class="slider on">
+            <img src="./images/image-product-2.jpg" class="slider">
+            <img src="./images/image-product-3.jpg" class="slider">
+            <img src="./images/image-product-4.jpg" class="slider">
+        </div>
+        <button id="next-button"><img src="./images/icon-next.svg"></button>
+    </div> 
+    
     <section>
-      <h2>Sneaker Company</h2>
-      <h1>Fall Limited Edition Sneakers</h1>
-      <div class="descriptions">
-        <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
-        durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
-        <div class="price">
-          <strong>$125.00</strong>
+        <div class="title1">
+            <p>Sneaker Company</p>
         </div>
-        <div class="dscount">
-          <p>50%</p>
+        <div class="title2">
+            <h1>Fall Limited Edition Sneakers</h1>
         </div>
-        <div class="price2">
-          <strong>$250.00</strong>
+        <div class="descriptions">
+          <p>These low-profile sneakers are your perfect casual wear companion. Featuring a 
+          durable rubber outer sole, they’ll withstand everything the weather can offer.</p>
+          <div class="price">
+            <strong>$125.00</strong>
+          </div>
+          <div class="dscount">
+            <p>50%</p>
+          </div>
+          <div class="price2">
+            <strong>$250.00</strong>
+          </div>
+          <button> 0  (cart) </button>
+          <button> Add to cart </button>
         </div>
-        <button> 0  (cart) </button>
-        <button> Add to cart </button>
-      </div>
     </section>
-
-    <footer>
-      <div class="attribution">
-        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-        Coded by <a href="https://www.linkedin.com/in/andressablima/">Andressa Lima</a>.
-      </div>
-    </footer>
-  </main>
+    </main>
 
 
-  <scipt src="./scripts/main.js"></scipt>
+
+
+
+
+
+
+
+
+    <script src="./script/scripts.js"></script>
 </body>
 </html>
