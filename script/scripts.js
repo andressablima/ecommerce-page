@@ -1,40 +1,27 @@
-const slider = document.querySelectorAll('.slider');
-const btnPrev = document.getElementById('prev-button');
-const btnNext =document.getElementById('next-button');
+let thumbnails = document.getElementsByClassName('thumbnail')
 
-let currentSlide = 0;
-//término da criação de variáveis
+let activeImages = document.getElementsByClassName('active')
 
-function hideSlider() {
-    slider.forEach(item => item.classList.remove('on'))
-}
+for (var i=0; i < thumbnails.length; i++){
+  
 
-function showSlider() {
-    slider[currentSlide].classList.add('on')
-}
+    thumbnails[i].addEventListener('mouseover', function(){
+        console.log(activeImages)
 
-function nextSlider() {
-    hideSlider()
-    if(currentSlide == slider.length -1){
-        currentSlide = 0
-    } else {
-        currentSlide++
-    }
-    showSlider()
-}
+        if (activeImages.length > 0){
+            activeImages[0].classList.remove('active')
+        }
 
-function prevSlider() {
-    hideSlider()
-    if(currentSlide == 0) {
-        currentSlide = slider.lenght -1
-    } else {
-        currentSlide--
-    }
-    showSlider()
+        this.classList.add('active')
+        document.getElementById('featured').src = this.src
+    })
 }
 
 
-btnNext.addEventListener('click', nextSlider)
-btnPrev.addEventListener('click', prevSlider)
 
-console.log(slider)
+
+
+
+
+
+
