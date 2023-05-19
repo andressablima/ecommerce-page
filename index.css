@@ -43,6 +43,11 @@ ul{
 li{
     font-weight: 400;
 }
+
+ul > li:hover{
+    color: hsl(26, 100%, 55%);
+}
+
 .side-nav{
     display: flex;
     justify-content: center;
@@ -134,4 +139,49 @@ section{
     color:hsl(219, 9%, 45%);
     font-weight: 400;
     line-height: 20px;
+}
+
+.price{
+    padding-top: 10px;
+    color: hsl(220, 13%, 13%);
+    font-size: 20px;
+}
+
+.price2{
+    color:hsl(220, 14%, 75%);
+    text-decoration: line-through;
+    font-size: small;
+    padding-bottom: 15px;
+}
+
+.add-items, .add-cart {
+    width: 9vw;
+    height: 8vh;
+    border: none;
+    background-color: hsl(223, 64%, 98%);
+    border-radius: 8px;
+}
+.add-cart{
+    background-color: hsl(26, 100%, 55%);
+    color: hsl(0, 0%, 100%);
+}
+.add-items .minus{
+    float: left;
+    margin-left: 5px;
+    margin-top: 4px;
+    padding-left: 5px;
+}
+
+.add-items .plus{
+    float: right;
+    margin-right: 5px;
+    padding-right: 5px;
+}
+
+.add-items-btn{
+    text-align: center;
+    align-items: center;
+}
+.add-cart-icon{
+    width: 12%;
 }
