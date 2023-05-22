@@ -42,6 +42,8 @@ ul{
 
 li{
     font-weight: 400;
+    transition: 0.5s;
+    cursor: pointer;
 }
 
 ul > li:hover{
@@ -66,6 +68,7 @@ ul > li:hover{
 }
 /* Slider CSS */
 .container-slider{
+    flex: 1;
     display: flex;
     width: 100%;
     min-height: 100vh;
@@ -117,6 +120,7 @@ ul > li:hover{
 
 section{
     grid-area: section;
+    flex: 1;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -136,71 +140,86 @@ section{
 
 .title2{
     font-weight: 700;
-    font-size: 2rem;
+    font-size: 2.25rem;
     padding-bottom: 10px;
 }
 
 .descriptions{
     color:hsl(219, 9%, 45%);
     font-weight: 400;
-    line-height: 20px;
+    font-size: 1.5rem;
+    line-height: 25px;
 }
 
 .price{
     padding-top: 10px;
     color: hsl(220, 13%, 13%);
-    font-size: 20px;
+    font-size: 24px;
 }
 
 .price2{
     color:hsl(220, 14%, 75%);
     text-decoration: line-through;
-    font-size: small;
+    font-size: 17px;
     padding-bottom: 15px;
 }
 
-.add-items, .add-cart {
+.qty-btn{
+    background-color: hsl(223, 64%, 98%);
+    display: inline-flex;
+    justify-content: space-around;
+    align-items: center;
+    min-width: 60px;
     width: 9vw;
+    border-radius: 8px;
+    overflow: hidden;
+    height: 6vh;
+}
+
+.qty-btn button{
+    display: flex;
+    align-items: center;
+    background: transparent;
+    border: 0;
+    padding: 0 18px;
+    font-size: 20px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.qty-btn span{
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.qty-btn button:hover{
+    background-color: hsl(25, 100%, 94%);
+}
+
+.add-cart {
+    width: 10vw;
     height: 6vh;
     border: none;
-    background-color: hsl(223, 64%, 98%);
     border-radius: 8px;
-}
-.add-cart{
     background-color: hsl(26, 100%, 55%);
     color: hsl(0, 0%, 100%);
-}
-.add-items .minus{
-    float: left;
-    margin-left: 5px;
-    margin-top: 4px;
-    padding-left: 5px;
+    font-size: 18px;
+
 }
 
-.add-items .plus{
-    float: right;
-    margin-right: 5px;
-    padding-right: 5px;
-}
-
-.add-items-btn{
-    text-align: center;
-    align-items: center;
-}
 .add-cart-icon{
     width: 12%;
 }
 
 .discount{
     width: 30px;
-    height: 20px;
+    height: 25px;
     background-color: hsl(25, 100%, 94%);
     color: hsl(26, 100%, 55%);
-    font-size: 11px;
+    font-size: 13px;
     border-radius: 5px;
     display: flex;
     justify-content: center;
-
     font-weight: 700;
     margin-top: 5px;
 }
