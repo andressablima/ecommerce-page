@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Carrossel</title>
     <link rel="stylesheet" href="./index.css">
+    <script src="https://kit.fontawesome.com/8f27d68390.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./cart.css">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -49,7 +51,29 @@
           </ul>
         </div>
         <div class="side-nav">
-          <img class="cart-icon" src="./images/icon-cart.svg">
+          <div class="cart-box">
+            <div class="cart-icon">
+              <img class="" src="./images/icon-cart.svg">
+            </div>
+            <div class="whole-cart-window hide">
+              <h2>Cart</h2>
+              <div class="cart-wrapper">
+                <div class="cart-item">
+                           <img src="./images/image-product-1.jpg"> 
+                           <div class="details">
+                               <h3>Fall Limited Edition Sneakers</h3>
+                               <p>
+                                <span class="quantity">Quantity: 2</span>
+                                   <span class="price">Price: $125.00</span>
+                               </p>
+                           </div>
+                           <div class="cancel"><img class="fas fa-window-close"  src="./images/icon-delete.svg"></div>
+                        </div> 
+              </div>
+              <div class="subtotal">Subtotal: $250.00</div>
+              <div class="checkout">Checkout</div>
+            </div>
+          </div>
           <img class="img-avatar" src="./images/image-avatar.png">
         </div>
       </nav>
@@ -110,5 +134,6 @@
 
 
     <script src="./script/scripts.js"></script>
+    <script src="./script/cart.js"></script>
 </body>
 </html>
