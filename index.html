@@ -4,9 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrossel</title>
+    <title>Sneakers</title>
     <link rel="stylesheet" href="./index.css">
-    <script src="https://kit.fontawesome.com/8f27d68390.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="./cart.css">
     <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -15,32 +14,25 @@
     <header>
       <!--Menu Mobile -->
       <nav class="nav-mobile">
-        <div class="items-container">
-          <div class="hamb-icon">
-            <img id="burguer" onclick="clickMenu()" src="./images/icon-menu.svg">
+        <div class="items-container-mob">
+          <div class="imgs">
+            <img class="logo-mob" src="./images/logo.svg">
+            <img class="cart-icon-mob" src="./images/icon-cart.svg">
           </div>
-          <menu class="itens-mob">
-            <ul>
+          <menu id="items-mob">
+            <ul class="dropitems-mob">
               <li><a href="#">Collections</a></li>
-              <li>Men</li>
-              <li>Women</li>
-              <li>About</li>
-              <li>Contact</li>
+              <li><a href="#">Men</a></li>
+              <li><a href="#">Women</a></li>
+              <li><a href="#">About</a></li>
+              <li><a href="#">Contact</a></li>
             </ul>
           </menu>
-        </div>
-  
-        <div class="logo-mob">
-          <img src="./images/logo.svg">
-        </div>
-        <div class="side-nav">
-            <img class="cart-icon" src="./images/icon-cart.svg">
-            <img class="prof-icon" src="./images/image-avatar.png">
         </div>
       </nav>
       <!-- Menu Desktop -->
       <nav class="menu-desktop">
-        <img src="./images/logo.svg">
+        <img class="logo" src="./images/logo.svg">
         <div class="menu-itens">
           <ul>
             <li>Collections</li>
@@ -131,6 +123,6 @@
   </main>
 
   <script src="./script/scripts.js"></script>
-  <script src="./script/cart.js"></script>
+  <script src="./script/menu.js"></script>
 </body>
 </html>

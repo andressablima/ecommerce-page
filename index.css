@@ -258,73 +258,128 @@ footer{
 
 
 
+@media  (max-width:769px) {
+    .menu-itens{
+        font-size: 12px;
+    }
+    .section{
+        top: 20vh;
+    }
+    .title1{
+        padding-top: 5vh;
+        font-size: 15px;
+    }
+    .title2{
+        font-size: 20px;
+    }
+    .descriptions{
+        font-size: 18px;
+    }
+    .price{
+        font-size: 19px;
+    }
+    .price2{
+        font-size: 15px;
+    }
 
+    .qty-btn{
+        width: 12vw;
+        height: 10vh;
+    }
+    .add-cart{
+        font-size: 14px;
+        width: 15vw;
+        height: 9vh;
+    }
 
-/* Responsive screen */
-@media only screen and (max-device-width: 720px) {
+    #featured{
+        max-width: 350px;
+        max-height: 500px;
+        margin-left: 17px;
+
+    }
+    .thumbnail{
+        max-width: 100px;
+        max-height: 80px;
+    }
+    
+}
+
+@media  (max-width:430px) {
+
     .container{
-        margin:5px 15px;
+        margin-left: 10px;
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: auto;
         grid-template-areas: 
-         "headmob"
-         "headmob"
+         "header"
+         "header"
          "slider"
          "section"
          "footer";
     }
 
-    .nav-mobile{
-        display: flex;
-        width: 80%;
-        grid-area: headmob;
-    }
-
-    .menu-desktop{
+    .img-avatar{
         display: none;
     }
-
-    .container-slider{
-        display: flex;
-        justify-content: center;
-        padding-bottom: 10vh;
-        width: 90%;
+    .menu-itens{
+        font-size: 10px;
     }
 
     .section{
-        top: 16vh;
+        top: 20vh;
         display: flex;
         justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        padding-left: 20px;
+        text-align: center;
     }
+    .title1{
+        padding-top: 5vh;
+        font-size: 13px;
 
-    .descriptions{
-        font-size:16px;
     }
-
     .title2{
-        font-size: 1.5rem;
+        font-size: 2rem;
+    }
+    .descriptions{
+        font-size: 18px;
+
+    }
+    .price{
+        font-size: 19px;
+    }
+    .price2{
+        font-size: 15px;
+    }
+    .qty-btn button{
+        padding: 0 8px;
+        font-size: 12px;
+        height: 100%;
+        cursor: pointer;
     }
 
-    .price-disc{
-        padding-top: 8px;
+    .qty-btn{
+        width: 20vw;
+        height: 8vh;
+    }
+    .add-cart{
+        font-size: 12px;
+        width: 24vw;
+        height: 9vh;
     }
 
-    .price strong{
-        font-size: 25px;
-    }
-
-    .qty-btn, .add-cart{
-        width: 33%;
-        height: 18%;
-    }
-    
     #featured{
         max-width: 350px;
         max-height: 400px;
 
+
     }
     .thumbnail{
-        max-width: 120px;
+        max-width: 90px;
         max-height: 70px;
+        margin-left: 10px;
     }
+    
 }

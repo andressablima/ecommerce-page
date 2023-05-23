@@ -2,7 +2,7 @@
     width:26% !important;
     position: relative;
     display: inline-block;
-    left:72%;
+    right:72%;
     top:25%;
     padding:10px 20px;
 }
@@ -90,4 +90,8 @@ h2{
 
 .cart-box:hover .whole-cart-window{
     display:block;
+}
+
+@media  (max-width:430px) {
+  
 }
