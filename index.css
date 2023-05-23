@@ -3,16 +3,14 @@
     padding: 0;
     box-sizing: border-box;
 }
-html{
-    margin: 0;
-    padding: 0;
-}
+
 main{
     margin-top: 10px;
     font-family: 'Kumbh Sans', sans-serif;
 }
 
 .container{
+    width: 100%;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-areas: 
@@ -38,6 +36,7 @@ header{
 }
 
 .menu-desktop{
+    width: 100%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -68,7 +67,7 @@ ul > li:hover{
     align-items: center;
 }
 .img-avatar{
-    width: 40%;
+    width: 30%;
 }
 
 .cart-icon{
@@ -263,8 +262,7 @@ footer{
 
 /* Responsive screen */
 @media only screen and (max-device-width: 720px) {
-
-    html, .container{
+    .container{
         margin:5px 15px;
         display: grid;
         grid-template-columns: repeat(1, 1fr);
@@ -290,12 +288,21 @@ footer{
         display: flex;
         justify-content: center;
         padding-bottom: 10vh;
+        width: 90%;
     }
 
     .section{
         top: 16vh;
         display: flex;
         justify-content: center;
+    }
+
+    .descriptions{
+        font-size:16px;
+    }
+
+    .title2{
+        font-size: 1.5rem;
     }
 
     .price-disc{
@@ -309,5 +316,15 @@ footer{
     .qty-btn, .add-cart{
         width: 33%;
         height: 18%;
+    }
+    
+    #featured{
+        max-width: 350px;
+        max-height: 400px;
+
+    }
+    .thumbnail{
+        max-width: 120px;
+        max-height: 70px;
     }
 }
